@@ -12,18 +12,28 @@
         // }
         // sub(7,8)
         // using literals
-         const add=(a,b)=>{
-        return document.write(`the subtraction of a and b is ${a+b}`)
+        //  const add=(a,b)=>{
+        // return document.write(`the subtraction of a and b is ${a+b}`)
+        // }
+        //         const sub=(a,b)=>{
+        // return document.write(`the subtraction of a and b is ${a-b}`)
+        // }
+        // setInterval(()=>{add(2,3)},3000)
+        // setTimeout(()=>{sub(3,4)},4000)
+        // sub(2,3)
+        const count=()=>{
+            const add=()=>{
+                for(a=0;a<10;a++)
+            document.write(a)
         }
-                const sub=(a,b)=>{
-        return document.write(`the subtraction of a and b is ${a-b}`)
+            document.getElementById("counter").innerHTML =`${add()}`;
         }
-        setInterval(()=>{add(2,3)},3000)
-        setTimeout(()=>{sub(3,4)},4000)
-        sub(2,3)
     </script>
 </head>
 <body>
-    
+    <button id="counter"></button>
+    <button onclick="setInterval(()=>{
+        count()
+    },1000)">count</button>
 </body>
 </html>
